@@ -118,7 +118,7 @@ class HomeView extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 160,
+            right: 170,
             bottom: 40,
             child: FloatingActionButton(
               backgroundColor: Colors.teal[900],
