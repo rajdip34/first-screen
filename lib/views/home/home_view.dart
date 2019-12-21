@@ -155,7 +155,7 @@ class HomeView extends StatelessWidget {
              width: 40,
              top: 10,
             child: FloatingActionButton(
-              backgroundColor: Colors.red,
+              backgroundColor: Colors.redAccent,
               elevation: 0,
               child: Icon(MdiIcons.instagram),
               onPressed: () => {},
