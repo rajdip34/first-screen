@@ -111,7 +111,7 @@ class HomeView extends StatelessWidget {
             bottom: 40,
             left: 40,
             child: FloatingActionButton(
-              backgroundColor: Colors.teal[900],
+              backgroundColor: Colors.grey[850],
               elevation: 0,
               child: Icon(Icons.phone),
               onPressed: () => {},
@@ -121,7 +121,7 @@ class HomeView extends StatelessWidget {
             right: 180,
             bottom: 40,
             child: FloatingActionButton(
-              backgroundColor: Colors.teal[900],
+              backgroundColor: Colors.grey[850],
               elevation: 0,
               child: Icon(Icons.chat_bubble),
               onPressed: () => {},
@@ -131,49 +131,76 @@ class HomeView extends StatelessWidget {
             right: 40,
             bottom: 40,
             child: FloatingActionButton(
-              backgroundColor: Colors.teal[900],
+              backgroundColor: Colors.grey[850],
               elevation: 0,
               child: Icon(Icons.email),
               onPressed: () => {},
             ),
           ),
-           Positioned(
-             bottom: 550,
-             right: 10,
-             width: 40,
-             top: 10,
+          Positioned(
+            bottom: 550,
+            right: 10,
+            width: 40,
+            top: 10,
             child: FloatingActionButton(
               backgroundColor: Colors.blue,
               elevation: 0,
               child: Icon(MdiIcons.facebook),
-              onPressed: () => {},
+              onPressed: () {
+                print("facebook");
+              },
             ),
           ),
-          Positioned(
-             bottom: 450,
-             right: 10,
-             width: 40,
-             top: 10,
-            child: FloatingActionButton(
-              backgroundColor: Colors.redAccent,
-              elevation: 0,
-              child: Icon(MdiIcons.instagram),
-              onPressed: () => {},
+          Align(
+            alignment: Alignment.centerRight,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                SizedBox(
+                  width: 59,
+                ),
+                Container(
+                  width: 40,
+                  child: FloatingActionButton(
+                    backgroundColor: Colors.redAccent,
+                    elevation: 0,
+                    child: Icon(MdiIcons.instagram),
+                    onPressed: () {
+                      print("instagram");
+                    },
+                  ),
+                ),
+                SizedBox(
+                  height: 430,
+                )
+              ],
             ),
           ),
-          Positioned(
-             bottom: 350,
-             right: 10,
-             width: 40,
-             top: 10,
-            child: FloatingActionButton(
-              backgroundColor: Colors.red,
-              elevation: 0,
-              child: Icon(MdiIcons.googlePlus),
-              onPressed: () => {},
+          Align(
+            alignment: Alignment.centerRight,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                SizedBox(
+                  width: 59,
+                ),
+                Container(
+                  width: 40,
+                  child: FloatingActionButton(
+                    backgroundColor: Colors.red,
+                    elevation: 0,
+                    child: Icon(MdiIcons.googlePlus),
+                    onPressed: () {
+                      print("googlePlus");
+                    },
+                  ),
+                ),
+                SizedBox(
+                  height: 330,
+                )
+              ],
             ),
           ),
-         
         ],
       ),
     );
