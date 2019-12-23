@@ -109,7 +109,7 @@ class HomeView extends StatelessWidget {
           ),
           Positioned(
             bottom: 40,
-            left: 30,
+            left: 40,
             child: FloatingActionButton(
               backgroundColor: Colors.teal[900],
               elevation: 0,
@@ -118,7 +118,7 @@ class HomeView extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 170,
+            right: 180,
             bottom: 40,
             child: FloatingActionButton(
               backgroundColor: Colors.teal[900],
@@ -128,7 +128,7 @@ class HomeView extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 30,
+            right: 40,
             bottom: 40,
             child: FloatingActionButton(
               backgroundColor: Colors.teal[900],
