@@ -17,12 +17,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constrain) {
-
-          // #########################################################
+        // #########################################################
         // ######################## small mobile #####################
         // #########################################################
         if (constrain.maxWidth < 600 && constrain.maxHeight < 700) {
-           
           return Stack(
             children: <Widget>[
               new Container(
@@ -322,6 +320,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+          
               Positioned(
                 bottom: 40,
                 left: 40,
